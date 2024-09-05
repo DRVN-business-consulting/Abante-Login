@@ -71,7 +71,7 @@ export default function App() {
     <View style={[styles.container, theme.container]}>
         <Text style={theme.text}>Username</Text>
         <TextInput
-          style={styles.textInput}
+          style={[styles.textInput, theme.text]}
           value={username}
           onChangeText={handleInputChange}
           maxLength={20}
@@ -82,7 +82,7 @@ export default function App() {
 
         <Text style={theme.text}>Password</Text>
         <TextInput
-          style={styles.textInput}
+          style={[styles.textInput, theme.text]}
           value={password}
           onChangeText={setPassword}
           secureTextEntry
@@ -146,6 +146,9 @@ const styles = StyleSheet.create({
     width: "40%",
     borderWidth: 1,
     marginBottom: 10,
+    borderColor: 'orange',
+    borderRadius:3,
+    padding: 5
   },
   lightTheme: {
     container: {
