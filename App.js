@@ -99,7 +99,7 @@ export default function App() {
           }}
           disabled={!!(errorMessage || error)}
         >
-          <Text>Login</Text>
+          <Text style={theme.text}>Login</Text>
         </TouchableOpacity>
 
       <View>
@@ -173,6 +173,7 @@ const styles = StyleSheet.create({
   button: {
     borderWidth:1,
     borderRadius:15,
-    padding:10
+    padding:10,
+    borderColor:'green'
   }
 });
