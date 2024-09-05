@@ -166,5 +166,10 @@ const styles = StyleSheet.create({
   emojiSize:{
     fontSize: 40,
     padding: 20
+  },
+  button: {
+    borderWidth:1,
+    borderRadius:15,
+    padding:10
   }
 });
