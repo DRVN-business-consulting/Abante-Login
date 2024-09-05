@@ -107,10 +107,9 @@ export default function App() {
       </View>
 
       <TouchableOpacity
-        style={styles.button}
         onPress={() => setDarkMode(!darkMode)}
       >
-        {darkMode ? <Text>🙉</Text> : <Text>🙈</Text>}
+        {darkMode ? <Text style={styles.emojiSize}>🙉</Text> : <Text style={styles.emojiSize}>🙈</Text>}
       </TouchableOpacity>
 
       <StatusBar style="auto" translucent={false} backgroundColor="transparent" />
@@ -123,13 +122,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  button: {
-    borderColor: 'black',
-    backgroundColor: '#AEAEFF',
-    borderWidth: 1,
-    padding: 10,
-    marginTop: 10,
   },
   center: {
     marginBottom: 20,
@@ -171,4 +163,8 @@ const styles = StyleSheet.create({
       color: '#FFF',
     },
   },
+  emojiSize:{
+    fontSize: 40,
+    padding: 20
+  }
 });
